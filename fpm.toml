@@ -1,0 +1,22 @@
+name = "harmonic-tide"
+version = "0.1.0"
+license = "MIT"
+author = "Daniel Cuevas"
+maintainer = "Daniel Cuevas"
+copyright = "Copyright (c) 2026 Daniel Cuevas"
+description = "Predicts tide heights from harmonic constituents and fits constituents to measured water levels."
+categories = ["science"]
+keywords = ["tides", "harmonic", "oceanography", "prediction", "fortran"]
+
+[build]
+auto-executables = true
+auto-tests = true
+
+[fortran]
+implicit-typing = false
+
+[install]
+library = true
+
+[dependencies]
+test-drive = { git = "https://github.com/fortran-lang/test-drive.git", tag = "v0.6.1" }

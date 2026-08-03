@@ -1,0 +1,30 @@
+# Build output
+build/
+*.o
+*.mod
+*.smod
+*.a
+*.so
+*.dll
+*.exe
+*.lib
+
+# fpm caches and local metadata
+.fpm/
+
+# Executable output directories
+*.app/
+*.test/
+
+# Editor and OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Demo output files produced by the example runs
+out/
+tide_table.txt
+tide_plot.csv
+fitted_constituents.txt

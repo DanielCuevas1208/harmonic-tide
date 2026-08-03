@@ -1,0 +1,17 @@
+# Wilson Cove synthetic tide gauge station
+# Reference epoch: 2000-01-01T00:00:00 UTC
+# Column 1: constituent name
+# Column 2: amplitude (metres)
+# Column 3: phase lag (degrees)
+# Speeds follow the standard astronomical angular speeds in degrees per hour.
+z0      1.852
+M2      1.120   235.6
+S2      0.460   262.4
+N2      0.240   221.0
+K1      0.280   112.0
+O1      0.210   96.5
+P1      0.090   111.2
+K2      0.125   261.8
+Q1      0.040   93.1
+M4      0.012   140.0
+MS4     0.006   158.0
