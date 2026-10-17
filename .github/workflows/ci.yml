@@ -31,16 +31,13 @@ jobs:
       - name: install fpm (macos)
         if: runner.os == 'macOS'
         run: |
-          curl -fsSL -o /usr/local/bin/fpm \
-            https://github.com/fortran-lang/fpm/releases/download/v0.13.0/fpm-0.13.0-macos-arm64-gcc-12
-          chmod +x /usr/local/bin/fpm
+          brew install fpm
 
       - name: install fpm (windows)
         if: runner.os == 'Windows'
         shell: pwsh
         run: |
-          curl.exe -fsSL -o fpm.exe \
-            https://github.com/fortran-lang/fpm/releases/download/v0.13.0/fpm-0.13.0-windows-x86_64-gcc-12.exe
+          curl.exe -fsSL -o fpm.exe https://github.com/fortran-lang/fpm/releases/download/v0.13.0/fpm-0.13.0-windows-x86_64-gcc-12.exe
           Get-Location | Select-Object -ExpandProperty Path | Out-File -FilePath $env:GITHUB_PATH -Append
 
       - name: build
