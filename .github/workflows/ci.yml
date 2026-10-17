@@ -31,9 +31,7 @@ jobs:
       - name: install fpm (macos)
         if: runner.os == 'macOS'
         run: |
-          curl -fsSL -o /usr/local/bin/fpm \
-            https://github.com/fortran-lang/fpm/releases/download/v0.13.0/fpm-0.13.0-macos-arm64-gcc-12
-          chmod +x /usr/local/bin/fpm
+          brew install fpm
 
       - name: install fpm (windows)
         if: runner.os == 'Windows'
